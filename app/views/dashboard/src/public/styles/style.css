@@ -1,0 +1,603 @@
+@keyframes zoomIn {
+  0% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes rotationsIn {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotationsOut {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.titleSection h1 {
+  padding: 0 0 0.7em 0;
+  margin: 0 0 2rem 0;
+  position: relative;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 3rem;
+  color: var(--txt-title);
+}
+.titleSection h1::before {
+  content: '';
+  position: absolute;
+  width: 40%;
+  height: 0.1rem;
+  background-color: var(--txt-descriptions);
+  bottom: 2px;
+  left: 0;
+}
+.titleSection h1::after {
+  content: '';
+  position: absolute;
+  width: 20%;
+  height: 0.4rem;
+  background-color: var(--secund-color);
+  bottom: 0;
+  left: 0;
+  border-radius: 2rem;
+}
+
+.conteinerAll {
+  display: none;
+}
+
+.swiper {
+  margin-top: 10rem;
+  width: 100vw;
+  height: calc(100vh - 10rem);
+}
+.swiper .slide .imgBackground {
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+}
+.swiper .slide {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.slide .slideInfo {
+  max-width: 60%;
+  margin-left: 2rem;
+  display: flex;
+  gap: 1.4rem;
+  flex-direction: column;
+}
+.slide .slideInfo h1 {
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 4rem;
+}
+.slide .slideInfo p {
+  color: #ffffff;
+  font-size: 1.4rem;
+  max-width: 60%;
+}
+.slide .slideInfo button {
+  max-width: 14rem;
+  height: 3rem;
+  font-size: 1.1rem;
+  color: #111;
+  font-weight: 700;
+  background-color: var(--secund-color);
+
+  cursor: pointer;
+}
+
+.services {
+  width: 100%;
+  height: 100%;
+  margin: 4rem 4rem;
+}
+.services .swiper-slide {
+  position: relative;
+
+  /* Center slide text vertically */
+  align-items: center;
+}
+.services .swiper-slide .slide2 {
+  width: 14rem;
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  border: 1px solid #e7e7e795;
+
+  transition: 0.4s ease;
+}
+.services .swiper-slide .slide2:hover {
+  border: 1px solid var(--secund-color);
+}
+
+.services .swiper-slide .slide2 .iconConteiner {
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ebebeb7f;
+  border-radius: 100%;
+  animation: zoomIn 0.4s;
+}
+.services .swiper-slide .slide2:hover .iconConteiner {
+  animation: zoomOut 0.4s;
+}
+.services .swiper-slide .slide2 .iconConteiner svg {
+  width: 3rem;
+  height: 3rem;
+  color: var(--main-color);
+  transition: 0.5s ease;
+  animation: rotationsIn 0.7s;
+}
+.services .swiper-slide .slide2:hover .iconConteiner svg {
+  color: var(--secund-color);
+  animation: rotationsOut 0.7s;
+}
+.services .swiper-slide .slide2 h2 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--txt-title);
+  text-transform: uppercase;
+}
+.services .swiper-slide .slide2 p {
+  color: var(--txt-descriptions);
+}
+.services .swiper-slide .slide2 button {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--main-color);
+  text-transform: uppercase;
+  background-color: transparent;
+}
+
+.works {
+  padding: 4rem 4rem;
+  background-color: #f3f3f3be;
+}
+.works .areaInfo {
+  width: 100%;
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.titleSection {
+  max-width: 35rem;
+}
+.works .areaInfo .rigth {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  max-width: 30rem;
+}
+.works .areaInfo .rigth p {
+  font-size: 1.1rem;
+  color: var(--txt-descriptions);
+}
+.works .areaInfo .rigth button {
+  position: relative;
+  height: 3.4rem;
+  max-width: 10rem;
+  background-color: var(--secund-color);
+  border-radius: 0.2rem;
+  transition: 0.6s ease;
+}
+.works .areaInfo .rigth button:hover {
+  background-color: #2b2b2b;
+  border-radius: 1rem 0 1rem 0;
+}
+.works .areaInfo .rigth button span {
+  color: var(--txt-title);
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.6s ease;
+}
+.works .areaInfo .rigth button:hover span {
+  color: #ffffff;
+  font-weight: 600;
+}
+.works .areaInfo .rigth button:active {
+  background-color: #454545;
+}
+.works .row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+.works .column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+.works .column div {
+  position: relative;
+}
+.works .column div .descriptonServiço {
+  position: absolute;
+  top: 0.6rem;
+
+  width: 100%;
+  height: calc(100% - 0.7rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000094;
+  opacity: 0;
+  transform: rotateY(180deg);
+
+  transition: 0.6s ease;
+}
+.works .column div .descriptonServiço h1 {
+  color: #ffffff;
+  font-weight: 700;
+}
+.works .column div .descriptonServiço p {
+  color: #ffffff;
+  font-weight: 400;
+}
+.works .column div:hover .descriptonServiço {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
+.works .column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.emphasisWorks {
+  position: relative;
+  padding: 4rem 4rem;
+}
+.emphasisWorks .areaInfo {
+}
+.emphasisWorks .conteinerContent {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.emphasisWorks .conteinerContent .cardChoose {
+  position: relative;
+  width: 24rem;
+  min-height: 16rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.emphasisWorks .conteinerContent .cardChoose .imgConteiner {
+  position: relative;
+  width: 100%;
+  height: 15rem;
+  background-size: cover;
+  overflow: hidden;
+}
+.emphasisWorks .conteinerContent .cardChoose .imgConteiner .imgShadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(17, 17, 17, 0.337);
+  opacity: 0;
+  transition: 0.6s ease;
+
+  z-index: 3;
+}
+.emphasisWorks .conteinerContent .cardChoose .imgConteiner img {
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+  background-position: top;
+  transition: 0.6s ease;
+
+  z-index: 2;
+}
+.emphasisWorks .conteinerContent .cardChoose:hover .imgConteiner .imgShadow {
+  opacity: 1;
+}
+.emphasisWorks .conteinerContent .cardChoose:hover .imgConteiner img {
+  transform: scale(1.04);
+}
+.emphasisWorks .conteinerContent .cardChoose .description {
+  width: 90%;
+  padding: 1rem;
+  background-color: #f3f3f3;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  transform: translateY(-2.5rem);
+
+  z-index: 4;
+}
+.emphasisWorks .conteinerContent .cardChoose .description .title {
+  font-size: 1.3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--txt-title);
+
+  transition: 0.4s ease;
+}
+.emphasisWorks .conteinerContent .cardChoose .description .title:hover {
+  color: var(--secund-color);
+}
+.emphasisWorks .conteinerContent .cardChoose .description .btnSeePlus {
+  display: flex;
+  gap: 1rem;
+  justify-content: left;
+}
+.emphasisWorks .conteinerContent .cardChoose .description .btnSeePlus a {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: var(--main-color);
+
+  transition: 0.4s ease;
+}
+.emphasisWorks .conteinerContent .cardChoose .description .btnSeePlus a:hover {
+  color: var(--secund-color);
+}
+.emphasisWorks .btnSeeAll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.emphasisWorks .btnSeeAll button {
+  width: 20rem;
+  height: 3rem;
+  background-color: var(--secund-color);
+  border-radius: 0.1rem;
+  cursor: pointer;
+  transition: 0.6s ease;
+}
+
+.emphasisWorks .btnSeeAll button span {
+  color: var(--txt-title);
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.6s ease;
+}
+.emphasisWorks .btnSeeAll button:hover {
+  background-color: #2b2b2b;
+  border-radius: 1rem 0 1rem 0;
+}
+.emphasisWorks .btnSeeAll button:hover span {
+  color: #ffffff;
+  font-weight: 600;
+}
+.emphasisWorks .btnSeeAll button:active {
+  background-color: #454545;
+}
+
+@keyframes upDown {
+  0% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(2rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes leftRight {
+  0% {
+    transform: translateX(0rem);
+  }
+  50% {
+    transform: translateX(3rem);
+  }
+  100% {
+    transform: translateX(0rem);
+  }
+}
+
+.choose {
+  position: relative;
+  padding: 6rem 4rem 12rem 4rem;
+}
+.choose::after {
+  content: '';
+  position: absolute;
+  top: 1rem;
+  right: 4rem;
+  width: 400px;
+  height: 400px;
+  background: url(../assets/float/pattern-2.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  animation: upDown 18s infinite;
+
+  z-index: -1;
+}
+.choose::before {
+  content: '';
+  position: absolute;
+  bottom: 4rem;
+  left: 1rem;
+  width: 230px;
+  height: 230px;
+  background: url(../assets/float/pattern-1.png);
+  animation: rotation 24s infinite;
+  z-index: -1;
+}
+.choose .conteinerContent {
+  margin-top: 6rem;
+  padding: 3rem 0;
+  background-color: #f8f8f8;
+  display: flex;
+  gap: 2rem;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.choose .conteinerContent .left {
+  margin-left: 3rem;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+.choose .conteinerContent .left .reason {
+  max-width: 30rem;
+  display: flex;
+  gap: 2.4rem;
+  flex-direction: row;
+}
+.choose .conteinerContent .left .reason img {
+  width: 3.2rem;
+  height: 3.4rem;
+}
+.choose .conteinerContent .left .reason .description {
+}
+.choose .conteinerContent .left .reason .description h1 {
+  color: var(--txt-title);
+  text-transform: uppercase;
+  font-size: 1.24rem;
+  font-weight: 800;
+  margin: 0 0 0.6rem 0;
+}
+.choose .conteinerContent .left .reason .description p {
+  color: var(--txt-descriptions);
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+}
+.choose .conteinerContent .rigth {
+  position: relative;
+  max-width: 39rem;
+  max-height: 30rem;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.opinions {
+  position: relative;
+  padding: 4rem 4rem;
+  background-color: #f3f3f3be;
+}
+.opinions::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 4rem;
+  width: 400px;
+  height: 400px;
+  background: url(../assets/float/pattern-3.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  animation: leftRight 18s infinite;
+}
+
+.recentsBlog {
+  position: relative;
+  padding: 4rem 4rem;
+}
+.recentsBlog::before {
+  content: '';
+  position: absolute;
+  bottom: 4rem;
+  left: 4rem;
+  width: 230px;
+  height: 230px;
+  background: url(../assets/float/pattern-1.png);
+  animation: rotation 24s infinite;
+}
+
+/* media queries  */
+
+@media (max-width: 950px) {
+  .services .swiper-slide {
+    margin: 0 1rem;
+  }
+}
+@media (max-width: 830px) {
+  .services .swiper-slide {
+    margin: 0 2rem;
+  }
+}
+@media (max-width: 675px) {
+  .services .swiper-slide {
+    margin: 0 3rem;
+  }
+}
+@media (max-width: 535px) {
+  .services .swiper-slide {
+    margin: 0 4rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
