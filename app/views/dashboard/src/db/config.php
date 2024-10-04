@@ -10,9 +10,9 @@ if ($mode == 'local') {
 }
 if ($mode == 'producao') {
   $dbHost = "localhost";
-  $dbUsername = "u843095325_adm_opensadordofuturo";
-  $dbPassword = "Consulado_apn2023";
-  $dbName = "u843095325_opensadordofuturo";
+  $dbUsername = "u618806000_inspopfu";
+  $dbPassword = "Inspopfu2";
+  $dbName = "u618806000_inspopfu";
 }
 try {
   $pdo = new PDO(

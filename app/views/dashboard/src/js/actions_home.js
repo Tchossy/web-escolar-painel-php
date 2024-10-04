@@ -1,6 +1,5 @@
 const baseURL =
-  '/_web/web-escolar-painel-php//app/views/dashboard/src/controllers/'
-const controllerURL = '/_web/web-escolar-painel-php//app/controllers/'
+  '/_web/web-escolar-painel-php/app/views/dashboard/src/controllers/'
 
 const origin_url = window.location.origin
 

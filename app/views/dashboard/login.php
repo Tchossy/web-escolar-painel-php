@@ -23,15 +23,24 @@ if ((isset($_SESSION['adm_email']))) {
 
   <!-- CEO -->
   <meta property="og:url" content="<?= urlProject(FOLDER_BASE . "/src/images/apresentation.png") ?>" />
-  <meta property=" og:site_name" content="Consulado Geral de Angola em Ponta Negra" />
-  <meta property="og:title" content="Consulado Geral de Angola em Ponta Negra" />
   <meta property="og:image" content="<?= urlProject(FOLDER_BASE . "/src/images/apresentation.png") ?>" />
-  <meta property=" og:description" content="Consulado Geral de Angola Ponta Negra" />
+  <meta property="og:site_name" content="Complexo Escolar Pensador do Futuro" />
+  <meta property="og:title" content="Complexo Escolar Pensador do Futuro" />
+  <meta property="og:description"
+    content="O Complexo Escolar Pensador do Futuro foi fundado com a missão de oferecer uma educação técnica de excelência, capacitando jovens e adultos, preparando-os para os desafios do mercado de trabalho." />
+  <meta name="author" content="https://www.tchossy.com/" />
   <meta property="og:type" content="article" />
-  <meta property="article:tag" content="InsPOPFU" />
-  <meta property="article:tag" content="Angola" />
-  <meta property="article:tag" content="Tchossy" />
-  <meta property="article:tag" content="Tchossy Solution" />
+  <meta property="article:tag" content="Complexo Escolar" />
+  <meta property="article:tag" content="Pensador do Futuro" />
+  <meta property="article:tag" content="Educação Técnica" />
+  <meta property="article:tag" content="Capacitação" />
+  <meta property="article:tag" content="Mercado de Trabalho" />
+  <meta property="article:tag" content="Formação Profissional" />
+  <meta property="article:tag" content="Educação" />
+  <meta property="article:tag" content="Ensino" />
+  <meta property="article:tag" content="Jovens" />
+  <meta property="article:tag" content="Adultos" />
+  <meta property="article:tag" content="Excelência" />
 
   <!-- set the page title -->
   <title> <?= SITE ?> </title>
@@ -60,9 +69,9 @@ if ((isset($_SESSION['adm_email']))) {
 
             <div class="logo">
               <a class="d-flex justify-content-center" href="<?= urlProject("dashboard/") ?>"
-                title="Consulado de Angola Ponta Negra"><img
+                title="Complexo Escolar Pensador do Futuro"><img
                   src="<?= urlProject(FOLDER_BASE . "/src/images/logo.png") ?>"
-                  alt="Consulado de Angola Ponta Negra"></a>
+                  alt="Complexo Escolar Pensador do Futuro"></a>
             </div>
 
             <p class="text-center" style="font-size: 0.98rem;">Sistema Integrado para Gerenciamento da pagina InsPOPFU

@@ -15,25 +15,24 @@
   <!-- CEO -->
   <link as="image" rel="preload" href="<?= urlProject(FOLDER_BASE . "/src/images/cover.png") ?>" fetchpriority="high" />
   <meta property="og:url" content="<?= urlProject(FOLDER_BASE . "/src/images/cover.png") ?>" />
-  <meta property="og:site_name" content="Grace Minds" />
-  <meta property="og:title" content="Grace Minds" />
   <meta property="og:image" content="<?= urlProject(FOLDER_BASE . "/src/images/cover.png") ?>" />
-  <meta property="og:description" content="Grace Minds - Academia de relacionamento" />
+  <meta property="og:site_name" content="Complexo Escolar Pensador do Futuro" />
+  <meta property="og:title" content="Complexo Escolar Pensador do Futuro" />
+  <meta property="og:description"
+    content="O Complexo Escolar Pensador do Futuro foi fundado com a missão de oferecer uma educação técnica de excelência, capacitando jovens e adultos, preparando-os para os desafios do mercado de trabalho." />
   <meta name="author" content="https://www.tchossy.com/" />
   <meta property="og:type" content="article" />
-  <meta property="article:tag" content="Grace" />
-  <meta property="article:tag" content="Minds" />
-  <meta property="article:tag" content="Grace Minds" />
-  <meta property="article:tag" content="Consultório" />
-  <meta property="article:tag" content="Relacionamento" />
-  <meta property="article:tag" content="Luanda" />
-  <meta property="article:tag" content="Terapia" />
-  <meta property="article:tag" content="Consulta" />
-  <meta property="article:tag" content="Psicologia" />
-  <meta property="article:tag" content="Psicóloga" />
-  <meta property="article:tag" content="Tchossy" />
-  <meta property="article:tag" content="Tchossy" />
-  <meta property="article:tag" content="Tchossy Solution" />
+  <meta property="article:tag" content="Complexo Escolar" />
+  <meta property="article:tag" content="Pensador do Futuro" />
+  <meta property="article:tag" content="Educação Técnica" />
+  <meta property="article:tag" content="Capacitação" />
+  <meta property="article:tag" content="Mercado de Trabalho" />
+  <meta property="article:tag" content="Formação Profissional" />
+  <meta property="article:tag" content="Educação" />
+  <meta property="article:tag" content="Ensino" />
+  <meta property="article:tag" content="Jovens" />
+  <meta property="article:tag" content="Adultos" />
+  <meta property="article:tag" content="Excelência" />
 
   <!-- Boxicons -->
   <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
@@ -61,6 +60,12 @@
         <a href="<?= urlProject("usersAdm") ?>">
           <i class='bx bxs-user-check'></i>
           <span class="text">Admin</span>
+        </a>
+      </li>
+      <li>
+        <a href="<?= urlProject("course") ?>">
+          <i class='bx bxs-book'></i>
+          <span class="text">Cursos</span>
         </a>
       </li>
       <li>

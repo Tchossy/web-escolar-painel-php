@@ -24,6 +24,11 @@ class Dash
     $page_name = "login";
     echo $this->templates->render($page_name, $data);
   }
+  public function course($data)
+  {
+    $page_name = "course";
+    echo $this->templates->render($page_name, $data);
+  }
   public function usersAdm($data)
   {
     $page_name = "usersAdm";

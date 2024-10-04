@@ -20,9 +20,9 @@ function router()
   $router->get("/home", "Dash:home");
   $router->get("/login", "Dash:login");
   $router->get("/usersAdm", "Dash:usersAdm");
+  $router->get("/course", "Dash:course");
   $router->get("/messages", "Dash:messages");
   $router->get("/news", "Dash:news");
-
 
   // ROTA DE ERROS
   $router->group("/ops");
